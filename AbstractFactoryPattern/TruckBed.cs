@@ -8,7 +8,7 @@ namespace AbstractFactoryPattern
     {
         public void Load()
         {
-            Console.WriteLine("Filling up cargo...");
+            Console.WriteLine("Filling up the truck bed...");
         }
     }
 }
