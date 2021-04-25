@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SingletonPattern
+﻿namespace SingletonPattern
 {
     class Singleton
     {
@@ -17,11 +13,6 @@ namespace SingletonPattern
                 Singleton.instance = new Singleton();
             }
             return Singleton.instance;
-        }
-
-        public void SayHello()
-        {
-            Console.WriteLine("Singleton says hello");
         }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IFlyingBehavior
     {
-        public void Fly(Animal animal);
+        public void Fly();
     }
 }

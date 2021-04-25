@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FactoryPattern
+﻿namespace FactoryMethodPattern
 {
     interface IVehicleFactory
     {
-        public IVehicle GetVehicle(string vehicleType);
+        public IVehicle GetVehicle();
     }
 }

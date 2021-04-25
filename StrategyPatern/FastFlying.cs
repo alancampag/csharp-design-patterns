@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace StrategyPattern
 {
     class FastFlying : IFlyingBehavior
     {
-        public void Fly(Animal animal)
+        public void Fly()
         {
-            Console.WriteLine($"{animal.Name} flies fast");
+            Console.WriteLine($"Flying fast");
         }
     }
 }

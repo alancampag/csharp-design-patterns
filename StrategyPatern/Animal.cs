@@ -5,30 +5,17 @@ namespace StrategyPattern
     public class Animal
     {
         public string Name { get; set; }
-        public int Legs { get; set; }
+        public IFlyingBehavior FlyingBehavior { get; set; }
 
-        readonly IFlyingBehavior flyingBehavior;
-
-        public Animal(string name, int legs, IFlyingBehavior flyingBehavior)
+        public Animal(string name, IFlyingBehavior flyingBehavior)
         {
             Name = name;
-            Legs = legs;
-            this.flyingBehavior = flyingBehavior;
-        }
-
-        public void Walk()
-        {
-            Console.WriteLine($"The {Name} walks with it's {Legs} legs");
-        }
-
-        public void Speak()
-        {
-            Console.WriteLine($"{Name} makes noise");
+            FlyingBehavior = flyingBehavior;
         }
 
         public void Fly()
         {
-            this.flyingBehavior.Fly(this);
+            FlyingBehavior.Fly();
         }
 
     }

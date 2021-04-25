@@ -4,8 +4,9 @@ using System.Text;
 
 namespace AbstractFactoryPattern
 {
-    interface IVehicleFactory
+    interface ICharacterFactory
     {
-        public Vehicle GetVehicle(string vehicleType);
+        public ICharacter GetCharacter();
+        public IWeapon GetWeapon(int damage);
     }
 }

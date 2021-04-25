@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DecoratorPattern
+﻿namespace DecoratorPattern
 {
     class ChickenDecorator : IngredientDecorator
     {
-        private readonly Pizza pizza;
-        private readonly double cost = 4.00;
+        private double cost = 4.00;
 
         public ChickenDecorator(Pizza pizza)
         {

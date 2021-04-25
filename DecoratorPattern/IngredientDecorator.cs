@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DecoratorPattern
+﻿namespace DecoratorPattern
 {
     abstract class IngredientDecorator : Pizza
     {
+        protected Pizza pizza;
     }
 }
